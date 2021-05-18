@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'us-cdbr-east-03.cleardb.net',
-	'username' => 'b52322e895bc0f',
-	'password' => '835044ae',
-	'database' => 'heroku_e78c446f7122f75',
+	'dsn'	=> 'mysqli://b52322e895bc0f:835044ae@us-cdbr-east-03.cleardb.net/heroku_e78c446f7122f75?reconnect=true',
+	'hostname' => 'localhost',
+	'username' => '',
+	'password' => '',
+	'database' => '',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
