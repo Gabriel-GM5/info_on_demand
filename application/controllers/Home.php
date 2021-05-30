@@ -5,6 +5,6 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		echo 'Teste';
+		$this->custom->renderizarPagina('home/teste');
 	}
 }
