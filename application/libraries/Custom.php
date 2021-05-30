@@ -6,7 +6,7 @@ class Custom
 {
 	private $CI;
 
-	public function _construct($CI)
+	public function __construct($CI)
 	{
 		$this->$CI = &get_instance();
 	}
