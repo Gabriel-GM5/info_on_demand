@@ -4,13 +4,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Custom
 {
-	public function __construct($params = array())
-	{
-		$CI = &get_instance();
-	}
-
 	public function renderizarPagina($view = false, $dados = false)
 	{
+		$CI = &get_instance();
 		if ($view) {
 			$this->CI->view('includes/header');
 			$this->CI->view('includes/navbar');
