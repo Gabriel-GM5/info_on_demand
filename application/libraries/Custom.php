@@ -4,22 +4,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Custom
 {
-	private $CI;
-
-	public function __construct($CI)
-	{
-		$this->$CI = &get_instance();
-	}
-
 	public function renderizarPagina($view = false, $data = false)
 	{
+		$CI = &get_instance();
 		if ($view) {
-			$this->CI->load->view('includes/header');
-			$this->CI->load->view('includes/navbar');
-			$this->CI->load->view('includes/content-start');
-			$this->CI->load->view($view, $data);
-			$this->CI->load->view('includes/content-end');
-			$this->CI->load->view('includes/footer');
+			$CI->load->view('includes/header');
+			$CI->load->view('includes/navbar');
+			$CI->load->view('includes/content-start');
+			$CI->load->view($view, $data);
+			$CI->load->view('includes/content-end');
+			$CI->load->view('includes/footer');
 		}
 	}
 }
