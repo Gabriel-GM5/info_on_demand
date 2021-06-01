@@ -29,6 +29,14 @@ class Home extends CI_Controller
 	{
 	}
 
+	public function logout()
+	{
+		if ($this->ion_auth->logged_in()) {
+			$this->ion_auth->logout();
+		}
+		redirect('home', 'refresh');
+	}
+
 	public function cadastro()
 	{
 		if (!$this->ion_auth->logged_in()) {
