@@ -1,6 +1,7 @@
 <?php
 $menu = '
 <li><a href="sass.html">Sass</a></li>
+<!--
 <li class="switch">
 <label>
 	<i class="material-icons tiny">brightness_low</i>
@@ -9,6 +10,7 @@ $menu = '
 	<i class="material-icons tiny">brightness_high</i>
 </label>
 </li>
+-->
 ';
 ?>
 
