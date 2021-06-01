@@ -1,15 +1,13 @@
 <?php
 $menu = '
 <li><a href="sass.html">Sass</a></li>
-<li>
-<div class="switch">
+<li class="switch">
 <label>
 	<i class="material-icons tiny">brightness_low</i>
     <input type="checkbox">
     <span class="lever"></span>
 	<i class="material-icons tiny">brightness_high</i>
 </label>
-</div>
 </li>
 ';
 ?>
