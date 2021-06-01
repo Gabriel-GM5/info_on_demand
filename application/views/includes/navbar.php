@@ -4,6 +4,14 @@ $menu = '
 <li><a href="badges.html">Components</a></li>
 <li><a href="collapsible.html">Javascript</a></li>
 <li><a href="mobile.html">Mobile</a></li>
+<div class="switch">
+<label>
+    Escuro
+    <input type="checkbox">
+    <span class="lever"></span>
+    Claro
+</label>
+</div>
 ';
 ?>
 
