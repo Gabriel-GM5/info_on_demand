@@ -1,15 +1,13 @@
 <?php
 $menu = '
 <li><a href="sass.html">Sass</a></li>
-<li><a href="badges.html">Components</a></li>
-<li><a href="collapsible.html">Javascript</a></li>
-<li><a href="mobile.html">Mobile</a></li>
 <li>
-Modo escuro:
 <div class="switch">
 <label>
+	<i class="material-icons small">brightness_high</i>
     <input type="checkbox">
     <span class="lever"></span>
+	<i class="material-icons small">brightness_low</i>
 </label>
 </div>
 </li>
