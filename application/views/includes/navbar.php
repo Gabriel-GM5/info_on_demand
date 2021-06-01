@@ -4,6 +4,7 @@ $menu = '
 <li><a href="badges.html">Components</a></li>
 <li><a href="collapsible.html">Javascript</a></li>
 <li><a href="mobile.html">Mobile</a></li>
+<li>
 <div class="switch">
 <label>
     Escuro
@@ -12,6 +13,7 @@ $menu = '
     Claro
 </label>
 </div>
+</li>
 ';
 ?>
 
