@@ -27,6 +27,6 @@ class Home extends CI_Controller
 
 	public function landing_page()
 	{
-		$this->load->view('home/landing_page');
+		$this->custom->renderizarPagina('home/landing_page');
 	}
 }
