@@ -5,12 +5,11 @@ $menu = '
 <li><a href="collapsible.html">Javascript</a></li>
 <li><a href="mobile.html">Mobile</a></li>
 <li>
+Modo escuro:
 <div class="switch">
 <label>
-    Escuro
     <input type="checkbox">
     <span class="lever"></span>
-    Claro
 </label>
 </div>
 </li>
