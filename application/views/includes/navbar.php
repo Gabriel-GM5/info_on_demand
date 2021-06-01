@@ -4,10 +4,10 @@ $menu = '
 <li>
 <div class="switch">
 <label>
-	<i class="material-icons small">brightness_high</i>
+	<i class="material-icons tiny">brightness_low</i>
     <input type="checkbox">
     <span class="lever"></span>
-	<i class="material-icons small">brightness_low</i>
+	<i class="material-icons tiny">brightness_high</i>
 </label>
 </div>
 </li>
