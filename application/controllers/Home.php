@@ -3,15 +3,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
-	public function index($login = false)
+	public function index()
 	{
 		if ($this->ion_auth->logged_in()) {
 			redirect('home/dashboard', 'refresh');
 		} else {
-			if ($login) {
+			if ($this->session->flashdata('login')) {
 				redirect('home/login', 'refresh');
 			} else {
-				redirect('home/landing-page', 'refresh');
+				redirect('home/landing_page', 'refresh');
 			}
 		}
 	}
@@ -23,5 +23,10 @@ class Home extends CI_Controller
 		} else {
 			redirect('home', 'refresh');
 		}
+	}
+
+	public function landing_page()
+	{
+		$this->load->view('home/landing_page');
 	}
 }
