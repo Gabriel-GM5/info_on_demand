@@ -25,6 +25,23 @@ class Home extends CI_Controller
 		}
 	}
 
+	public function logar()
+	{
+	}
+
+	public function cadastro()
+	{
+		if (!$this->ion_auth->logged_in()) {
+			$this->custom->renderizarPagina('home/cadastro');
+		} else {
+			redirect('home', 'refresh');
+		}
+	}
+
+	public function cadastrar()
+	{
+	}
+
 	public function landing_page()
 	{
 		$this->custom->renderizarPagina('home/landing_page');
