@@ -17,7 +17,8 @@ $menu = '
 			</ul>
 		</div>
 	</nav>
-	<ul class="sidenav" id="mobile-demo">
-		<?php echo $menu; ?>
-	</ul>
 </div>
+
+<ul class="sidenav" id="mobile-demo">
+	<?php echo $menu; ?>
+</ul>
