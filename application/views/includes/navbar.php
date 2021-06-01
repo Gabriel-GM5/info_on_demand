@@ -7,7 +7,7 @@ $menu = '
 ';
 ?>
 
-<div class="navbar-fixed">
+<div class="navbar-fixed indigo lighten-2">
 	<nav>
 		<div class="nav-wrapper">
 			<a href="<?php echo site_url() ?>" class="brand-logo"><img src="<?php echo base_url('assets/icons/Logo.svg') ?>" width="auto" height="56"></a>
@@ -19,6 +19,6 @@ $menu = '
 	</nav>
 </div>
 
-<ul class="sidenav" id="mobile-demo">
+<ul class="sidenav indigo lighten-4" id="mobile-demo">
 	<?php echo $menu; ?>
 </ul>
