@@ -1,4 +1,4 @@
-<div class='row' style="min-height: 100%;">
+<div class='row'>
 	<div class='col s12 m6'>
 
 	</div>
@@ -28,11 +28,16 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="input-field col s12">
-								<?php
-								echo form_button(array('class' => "btn", 'type' => "submit", 'name' => "action", 'content' => 'Entrar'));
-								?>
-							</div>
+							<center>
+								<div class="input-field col s6">
+									<?php
+									echo form_button(array('class' => "btn", 'type' => "submit", 'name' => "action", 'content' => 'Entrar'));
+									?>
+								</div>
+								<div class="input-field col s6">
+									<a href="<?php echo site_url('home/cadastro') ?>">Cadastre-se!</a>
+								</div>
+							</center>
 						</div>
 						<?php
 						echo form_close();
