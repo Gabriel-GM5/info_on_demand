@@ -21,6 +21,7 @@ if ($logado) {
 			<a href="#!" class="modal-close btn-flat">Voltar</a>
 		</div>
 	</div>
+	
 <?php
 } else {
 	$menu .= '<li><a class="btn botaoNavBar" href="' . site_url('home/login') . '">Login</a></li>';
