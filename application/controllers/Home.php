@@ -28,6 +28,14 @@ class Home extends CI_Controller
 
 	public function logar()
 	{
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('email', 'E-mail', 'required');
+		$this->form_validation->set_rules('password', 'Senha', 'required');
+		if ($this->form_validation->run() && $this->ion_auth->login($this->input->post('email'), $this->input->post('password'), TRUE)) {
+			redirect('home', 'refresh');
+		} else {
+			redirect('home/login', 'refresh');
+		}
 	}
 
 	public function logout()
