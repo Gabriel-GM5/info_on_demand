@@ -39,11 +39,14 @@ $menu .= '
 
 <div id="modalUsuario" class="modal">
 	<div class="modal-content">
-		<h4>Modal Header</h4>
-		<p>A bunch of text</p>
+		<h4><?php echo $nomeUsuario . $sobrenomeUsuario ?></h4>
+		<div class="collection">
+			<a href="#!" class="collection-item">Editar</a>
+			<a href="<?php echo site_url('home/logout') ?>" class="collection-item">Sair</a>
+		</div>
 	</div>
 	<div class="modal-footer">
-		<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+		<a href="#!" class="modal-close btn-flat">Voltar</a>
 	</div>
 </div>
 
