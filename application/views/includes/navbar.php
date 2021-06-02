@@ -18,7 +18,7 @@ if ($logado) {
 			</div>
 		</div>
 		<div class="modal-footer">
-			<a href="#!" class="modal-close btn-flat">Voltar</a>
+			<a href="#!" class="modal-close btn-flat">Fechar</a>
 		</div>
 	</div>
 <?php
