@@ -11,7 +11,7 @@ if ($logado) {
 ?>
 	<div id="modalUsuario" class="modal">
 		<div class="modal-content">
-			<h4><?php echo $nomeUsuario . $sobrenomeUsuario ?></h4>
+			<h4><?php echo $nomeUsuario . ' ' . $sobrenomeUsuario ?></h4>
 			<div class="collection">
 				<a href="#!" class="collection-item">Editar</a>
 				<a href="<?php echo site_url('home/logout') ?>" class="collection-item">Sair</a>
