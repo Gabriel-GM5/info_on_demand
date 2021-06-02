@@ -1,7 +1,7 @@
 <?php
 $menu = '';
 if ($logado) {
-	$menu .= '<li><a class="dropdown-trigger btn" href="#!" data-target="dropdownUsuario">' . $nomeUsuario . '<i class="material-icons right">arrow_drop_down</i></a></li>';
+	$menu .= '<li><a class="dropdown-trigger" href="#!" data-target="dropdownUsuario">' . $nomeUsuario . '<i class="material-icons right">arrow_drop_down</i></a></li>';
 } else {
 	$menu .= '<li><a class="btn botaoNavBar" href="' . site_url('home/login') . '">Login</a></li>';
 }
