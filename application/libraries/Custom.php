@@ -9,8 +9,15 @@ class Custom
 		$CI = &get_instance();
 		if ($view) {
 			$logged_in = $CI->ion_auth->logged_in();
-			$user = $CI->ion_auth->user()->row();
-			$dadosNav = array('logado' => $logged_in, 'nomeUsuario' => $user->first_name, 'idUsuario' => $user->id);
+			if ($logged_in) {
+				$user = $CI->ion_auth->user()->row();
+				$nomeUsuario = $user->first_name;
+				$idUsuario = $user->id;
+			} else {
+				$nomeUsuario = '';
+				$idUsuario = '';
+			}
+			$dadosNav = array('logado' => $logged_in, 'nomeUsuario' => $nomeUsuario, 'idUsuario' => $idUsuario);
 			$CI->load->view('includes/header');
 			$CI->load->view('includes/navbar', $dadosNav);
 			$CI->load->view('includes/content-start');
