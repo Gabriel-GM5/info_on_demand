@@ -3,7 +3,7 @@ $menu = '';
 if ($logado) {
 	$menu .= '
 	<li>
-		<div class="chip">
+		<div class="chip btn">
     		<img src="' . base_url('assets/images/sem_foto.png') . '" alt="Contact Person">
     		' . $nomeUsuario . '
   		</div>
