@@ -1,8 +1,10 @@
 <div class='row'>
 	<div class='col s12 m6'>
+		<br><br>
 
 	</div>
 	<div class='col s12 m6'>
+		<br><br>
 		<div class='row'>
 			<div class='col s12 l8 offset-l2'>
 				<div class="card">
