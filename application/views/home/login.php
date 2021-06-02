@@ -33,7 +33,7 @@
 							<center>
 								<div class="input-field col s12">
 									<?php
-									echo form_button(array('class' => "btn", 'type' => "submit", 'name' => "action", 'content' => 'Entrar'));
+									echo form_button(array('class' => "btn primario", 'type' => "submit", 'name' => "action", 'content' => 'Entrar'));
 									?>
 								</div>
 								<div class="input-field col s6">
