@@ -4,7 +4,7 @@
 	</div>
 	<div class='col s12 m6'>
 		<div class='row'>
-			<div class='col'>
+			<div class='col s12'>
 				<div class="card">
 					<div class="card-content">
 						<span class="card-title">Login</span>
