@@ -16,7 +16,7 @@
 						<div class="row">
 							<div class="input-field col s12">
 								<?php
-								echo form_input(array('id' => "email", 'type' => "email", 'class' => "validate"));
+								echo form_input(array('id' => "email", 'type' => "email", 'class' => "validate", 'maxlength' => "45"));
 								echo form_label('E-mail', 'email');
 								?>
 							</div>
@@ -24,7 +24,7 @@
 						<div class="row">
 							<div class="input-field col s12">
 								<?php
-								echo form_input(array('id' => "password", 'type' => "password", 'class' => "validate"));
+								echo form_input(array('id' => "password", 'type' => "password", 'class' => "validate", 'maxlength' => "45"));
 								echo form_label('Senha', 'password');
 								?>
 							</div>
