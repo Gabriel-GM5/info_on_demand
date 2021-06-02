@@ -4,7 +4,7 @@ if ($logado) {
 	$menu .= '
 	<li>
 		<div class="chip">
-    		<!--<img src="" alt="Contact Person">-->
+    		<img src="' . base_url('assets/images/sem_nome.png') . '" alt="Contact Person">
     		' . $nomeUsuario . '
   		</div>
   	</li>';
