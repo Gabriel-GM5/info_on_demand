@@ -1,7 +1,13 @@
 <?php
 $menu = '';
 if ($logado) {
-	$menu .= '<li><a class="dropdown-trigger" href="#!" data-target="dropdownUsuario">' . $nomeUsuario . '<i class="material-icons right">arrow_drop_down</i></a></li>';
+	$menu .= '<li><a class="dropdown-trigger btn" href="#!" data-target="dropdownUsuario">' . $nomeUsuario . '<i class="material-icons right">arrow_drop_down</i></a></li>';
+	$menu .= '
+	<ul id="dropdownUsuario" class="dropdown-content">
+		<li><a href="#!">Editar</a></li>
+		<li class="divider"></li>
+		<li><a href="' . site_url('home/logout') . '">Sair</a></li>
+	</ul>';
 } else {
 	$menu .= '<li><a class="btn botaoNavBar" href="' . site_url('home/login') . '">Login</a></li>';
 }
