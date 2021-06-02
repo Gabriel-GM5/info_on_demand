@@ -1,6 +1,11 @@
 <?php
-$menu = '
-<li><a href="sass.html">Sass</a></li>
+$menu = '';
+if ($logado) {
+	$menu .= '';
+} else {
+	$menu .= '<li><a class="btn botaoNavBar" href="' . site_url('home/login') . '">Login</a></li>';
+}
+$menu .= '
 <!--
 <li class="switch">
 <label>
