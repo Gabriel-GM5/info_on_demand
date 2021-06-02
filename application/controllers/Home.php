@@ -19,6 +19,7 @@ class Home extends CI_Controller
 	public function login()
 	{
 		if (!$this->ion_auth->logged_in()) {
+			$this->load->helper('form');
 			$this->custom->renderizarPagina('home/login');
 		} else {
 			redirect('home', 'refresh');
