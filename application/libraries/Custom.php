@@ -17,6 +17,7 @@ class Custom
 			} else {
 				$nomeUsuario = '';
 				$idUsuario = '';
+				$sobrenomeUsuario = '';
 			}
 			$dadosNav = array('logado' => $logged_in, 'nomeUsuario' => $nomeUsuario, 'idUsuario' => $idUsuario, 'sobrenomeUsuario' => $sobrenomeUsuario);
 			$CI->load->view('includes/header');
