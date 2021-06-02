@@ -3,7 +3,7 @@ $menu = '';
 if ($logado) {
 	$menu .= '
 	<li>
-		<div class="chip btn">
+		<div class="chip btn modal-trigger" data-target="modalUsuario">
     		<img src="' . base_url('assets/images/sem_foto.png') . '" alt="Contact Person">
     		' . $nomeUsuario . '
   		</div>
@@ -35,6 +35,16 @@ $menu .= '
 			</ul>
 		</div>
 	</nav>
+</div>
+
+<div id="modalUsuario" class="modal">
+	<div class="modal-content">
+		<h4>Modal Header</h4>
+		<p>A bunch of text</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+	</div>
 </div>
 
 <ul class="sidenav" id="mobile-demo">
