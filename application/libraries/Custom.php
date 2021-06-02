@@ -8,7 +8,8 @@ class Custom
 	{
 		$CI = &get_instance();
 		if ($view) {
-			$dadosNav = array('logado'=>$CI->ion_auth->logged_in());
+			$user = $this->ion_auth->user()->row();
+			$dadosNav = array('logado' => $CI->ion_auth->logged_in(), 'nomeUsuario' => $user->first_name(), 'idUsuario' => $user->id);
 			$CI->load->view('includes/header');
 			$CI->load->view('includes/navbar', $dadosNav);
 			$CI->load->view('includes/content-start');

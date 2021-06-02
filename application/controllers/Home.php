@@ -63,4 +63,9 @@ class Home extends CI_Controller
 	{
 		$this->custom->renderizarPagina('home/landing_page');
 	}
+
+	public function dashboard()
+	{
+		$this->custom->renderizarPagina('home/dashboard');
+	}
 }
