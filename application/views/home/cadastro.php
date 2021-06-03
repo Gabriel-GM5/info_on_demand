@@ -52,7 +52,7 @@
 	<div class="row">
 		<div class="input-field col s12">
 			<?php
-			echo form_button(array('class' => "btn primario", 'type' => "submit", 'name' => "action", 'content' => 'Cadastrar'));
+			echo form_button(array('class' => "btn primario", 'id'=>"actionCadastrar", 'type' => "submit", 'name' => "actionCadastrar", 'content' => 'Cadastrar'));
 			echo form_button(array('class' => "btn secundario", 'type' => "button", 'name' => "voltar", 'content' => 'Voltar', 'onclick' => "window.location.href = '" . site_url('home/login') . "';"));
 			?>
 		</div>
