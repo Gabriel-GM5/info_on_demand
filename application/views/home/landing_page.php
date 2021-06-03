@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div class='col s12 m8 offset-m2'>
+		<div class='col s12 m10 offset-m1'>
 			<div class="card">
 				<div class="card-content">
 					<?php
@@ -9,7 +9,7 @@
 					<div class="row">
 						<div class="input-field col s12">
 							<?php
-							echo form_input(array('id' => "search", 'name' => "search", 'type' => "text", 'class' => "validate", 'required' => "required"));
+							echo form_input(array('id' => "search", 'name' => "search", 'type' => "text"));
 							echo form_label('Pesquisar', 'search');
 							?>
 						</div>
