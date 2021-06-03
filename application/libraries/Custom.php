@@ -39,6 +39,7 @@ class Custom
 			}
 			$tmp2 = array($tipo => $mensagem);
 			array_push($tmp, $tmp2);
+			var_dump($tmp);
 			return true;
 		} else {
 			return false;
