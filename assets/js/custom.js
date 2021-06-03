@@ -20,7 +20,9 @@ $('#confirmPassword, #actionCadastrar').on('keyup focusin focusout change click'
 
 function getNotificacoes() {
 	$.ajax({
-		url: api_url + 'getNotificacoes', success: function (result) {
+		url: api_url + 'getNotificacoes',
+		method: "GET",
+		success: function (result) {
 			alert(result);
 		}
 	});
