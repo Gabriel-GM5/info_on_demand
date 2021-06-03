@@ -32,7 +32,7 @@ class Custom
 	public function novaNotificacao($tipo = null, $mensagem = null)
 	{
 		$CI = &get_instance();
-		$tmp = $CI->session->flasdata('notificacao');
+		$tmp = $CI->session->flashdata('notificacao');
 		var_dump($tmp);
 	}
 }
