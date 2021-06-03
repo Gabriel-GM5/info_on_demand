@@ -6,7 +6,8 @@ $(document).ready(function () {
 
 $('#confirmPassword').keyup(function () {
 	if ($('#password').val() != $(this).val()) {
-		$(this).parent('div').append('<p>As senhas devem ser iguais!</p>')
+		$('#mensConfSenha').remove();
+		$(this).parent('div').append('<p id="mensConfSenha">As senhas devem ser iguais!</p>');
 		event.preventDefault();
 	}
 });
