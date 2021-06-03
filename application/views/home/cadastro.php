@@ -57,7 +57,7 @@
 		</div>
 		<div class="input-field col s6">
 			<?php
-			echo form_button(array('class' => "btn secundario", 'type' => "button", 'name' => "voltar", 'content' => 'Voltar', 'onclick' => 'window.location.href = "' . site_url('home/login') . '";'));
+			echo form_button(array('class' => "btn secundario", 'type' => "button", 'name' => "voltar", 'content' => 'Voltar', 'onclick' => "window.location.href = '" . site_url('home/login') . "';"));
 			?>
 		</div>
 	</div>
