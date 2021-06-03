@@ -10,7 +10,6 @@ class Api extends CI_Controller
 
 	public function getNotificacoes()
 	{
-		$data = $this->session->flashdata('notificacao');
-		echo json_encode($data);
+		echo json_encode($this->session->flashdata('notificacao'));
 	}
 }
