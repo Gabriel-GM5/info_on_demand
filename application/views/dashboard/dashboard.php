@@ -42,7 +42,7 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<?php
-				echo form_input(array('id' => "subTitulo", 'name' => "subTitulo", 'type' => "text", 'class' => "validate", 'value' => set_value('subTitulo'), 'required' => "required"));
+				echo form_input(array('id' => "subTitulo", 'name' => "subTitulo", 'type' => "text", 'class' => "validate", 'value' => set_value('subTitulo')));
 				echo form_label('Subtítulo', 'subTitulo');
 				?>
 			</div>
@@ -50,7 +50,7 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<?php
-				echo form_textarea(array('id' => "conteudo", 'name' => "conteudo", 'class' => "validate materialize-textarea", 'value' => set_value('conteudo'), 'required' => "required"));
+				echo form_textarea(array('id' => "conteudo", 'name' => "conteudo", 'class' => "validate materialize-textarea", 'value' => set_value('conteudo')));
 				echo form_label('Conteúdo', 'conteudo');
 				?>
 			</div>
