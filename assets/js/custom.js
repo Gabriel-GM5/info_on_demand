@@ -11,6 +11,6 @@ $('#confirmPassword, #actionCadastrar').on('keyup focusin focusout change click'
 		$('#confirmPassword').parent('div').append('<p id="mensConfSenha">As senhas devem ser iguais!</p>');
 		event.preventDefault();
 	} else {
-		$(this).attr('class', 'validate valid');
+		$('#confirmPassword').attr('class', 'validate valid');
 	}
 });
