@@ -58,8 +58,8 @@
 		<div class="row">
 			<div class="file-field input-field">
 				<div class="btn">
-					<span>capa</span>
-					<input type="file" id="capa" name="capa" accept="image/jpg image/jpeg image/png image/svg">
+					<span>Imagem</span>
+					<input type="file" id="imagem" name="imagem" accept="image/*">
 				</div>
 				<div class="file-path-wrapper">
 					<input class="file-path validate" type="text">
@@ -69,8 +69,8 @@
 		<div class="row">
 			<div class="file-field input-field">
 				<div class="btn">
-					<span>Imagens</span>
-					<input type="file" id="imagens" name="imagens" accept="image/*" multiple>
+					<span>Vídeo</span>
+					<input type="file" id="video" name="video" accept="video/*">
 				</div>
 				<div class="file-path-wrapper">
 					<input class="file-path validate" type="text">
@@ -80,8 +80,8 @@
 		<div class="row">
 			<div class="file-field input-field">
 				<div class="btn">
-					<span>Vídeos</span>
-					<input type="file" id="videos" name="videos" accept="video/*" multiple>
+					<span>Áudio</span>
+					<input type="file" id="audio" name="audio" accept="audio/*">
 				</div>
 				<div class="file-path-wrapper">
 					<input class="file-path validate" type="text">
