@@ -52,7 +52,7 @@
 	<div class="row">
 		<div class="input-field col s6">
 			<?php
-			echo form_button(array('class' => "btn primario", 'type' => "submit", 'name' => "action", 'content' => 'Entrar'));
+			echo form_button(array('class' => "btn primario", 'type' => "submit", 'name' => "action", 'content' => 'Cadastrar'));
 			?>
 		</div>
 		<div class="input-field col s6">
