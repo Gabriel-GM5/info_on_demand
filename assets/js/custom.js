@@ -1,7 +1,10 @@
+var api_url = 'https://info-on-demand.herokuapp.com/api/';
+
 $(document).ready(function () {
 	$('.sidenav').sidenav();
 	$(".dropdown-trigger").dropdown();
 	$('.modal').modal();
+	getNotificacao();
 });
 
 $('#confirmPassword, #actionCadastrar').on('keyup focusin focusout change click', function () {
@@ -14,3 +17,11 @@ $('#confirmPassword, #actionCadastrar').on('keyup focusin focusout change click'
 		$('#confirmPassword').attr('class', 'validate valid');
 	}
 });
+
+function getNotificacoes() {
+	$.ajax({
+		url: api_url + 'getNotificacoes', success: function (result) {
+			console.log(result);
+		}
+	});
+}

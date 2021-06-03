@@ -83,7 +83,7 @@ class Home extends CI_Controller
 			} else {
 				$this->custom->novaNotificacao('erro', validation_errors());
 			}
-			//redirect('home/cadastro', 'refresh');
+			redirect('home/cadastro', 'refresh');
 		} else {
 			redirect('home', 'refresh');
 		}
