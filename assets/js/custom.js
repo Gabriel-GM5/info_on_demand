@@ -32,5 +32,6 @@ function getNotificacoes() {
 }
 
 $("form").submit(function (event) {
+	$('.modal').modal('close');
 	document.getElementById("overlay").style.display = "block";
 });
