@@ -71,7 +71,7 @@ class Home extends CI_Controller
 			$this->form_validation->set_rules('confirmPassword', 'Confirmar Senha', 'required');
 			if ($this->form_validation->run()) {
 				if ($this->input->post('password') == $this->input->post('confirmPassword')) {
-					if ($this->ion_auth->register($this->input->post('email'), $this->input->post('password'), $this->input->post('email'), array('first_name' => $this->input->post('first_name'), 'last_name' => $this->input->post('last_name')), 2)) {
+					if ($this->ion_auth->register($this->input->post('email'), $this->input->post('password'), $this->input->post('email'), array('first_name' => $this->input->post('first_name'), 'last_name' => $this->input->post('last_name')), array(2))) {
 						$this->custom->novaNotificacao('sucesso', 'Cadastrado com sucesso!');
 						redirect('home/login', 'refresh');
 					} else {
