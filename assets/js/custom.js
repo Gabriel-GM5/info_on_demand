@@ -23,7 +23,7 @@ function getNotificacoes() {
 		url: api_url + 'getNotificacoes',
 		method: "GET",
 		success: function (result) {
-			if (result) {
+			if (result != 'null') {
 				alert(result);
 			}
 		}
