@@ -50,7 +50,7 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<?php
-				echo form_textarea(array('id' => "conteudo", 'name' => "conteudo", 'class' => "validate materialize-textarea", 'value' => set_value('conteudo'), 'required' => "required", 'style' => "min-height:250px;height:100%;"));
+				echo form_textarea(array('id' => "conteudo", 'name' => "conteudo", 'class' => "validate materialize-textarea", 'value' => set_value('conteudo'), 'required' => "required", 'style' => "min-height:200px;height:100%;"));
 				echo form_label('Conteúdo', 'conteudo');
 				?>
 			</div>
