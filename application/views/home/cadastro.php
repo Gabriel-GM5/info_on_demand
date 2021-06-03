@@ -12,7 +12,7 @@
 	<div class="row">
 		<div class="input-field col s12">
 			<?php
-			echo form_input(array('id' => "first_name", 'name' => "first_name", 'type' => "text", 'class' => "validate", 'maxlength' => "45", 'required' => "required"));
+			echo form_input(array('id' => "first_name", 'name' => "first_name", 'type' => "text", 'class' => "validate", 'value' => set_value('first_name'), 'maxlength' => "45", 'required' => "required"));
 			echo form_label('Nome', 'first_name');
 			?>
 		</div>
@@ -20,7 +20,7 @@
 	<div class="row">
 		<div class="input-field col s12">
 			<?php
-			echo form_input(array('id' => "last_name", 'name' => "last_name", 'type' => "text", 'class' => "validate", 'maxlength' => "45", 'required' => "required"));
+			echo form_input(array('id' => "last_name", 'name' => "last_name", 'type' => "text", 'class' => "validate", 'value' => set_value('last_name'), 'maxlength' => "45", 'required' => "required"));
 			echo form_label('Sobrenome', 'last_name');
 			?>
 		</div>
@@ -28,7 +28,7 @@
 	<div class="row">
 		<div class="input-field col s12">
 			<?php
-			echo form_input(array('id' => "email", 'name' => "email", 'type' => "email", 'class' => "validate", 'maxlength' => "45", 'required' => "required"));
+			echo form_input(array('id' => "email", 'name' => "email", 'type' => "email", 'class' => "validate", 'value' => set_value('email'), 'maxlength' => "45", 'required' => "required"));
 			echo form_label('E-mail', 'email');
 			?>
 		</div>
@@ -52,7 +52,7 @@
 	<div class="row">
 		<div class="input-field col s12">
 			<?php
-			echo form_button(array('class' => "btn primario", 'id'=>"actionCadastrar", 'type' => "submit", 'name' => "actionCadastrar", 'content' => 'Cadastrar'));
+			echo form_button(array('class' => "btn primario", 'id' => "actionCadastrar", 'type' => "submit", 'name' => "actionCadastrar", 'content' => 'Cadastrar'));
 			echo form_button(array('class' => "btn secundario", 'type' => "button", 'name' => "voltar", 'content' => 'Voltar', 'onclick' => "window.location.href = '" . site_url('home/login') . "';"));
 			?>
 		</div>

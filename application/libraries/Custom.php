@@ -28,4 +28,10 @@ class Custom
 			$CI->load->view('includes/footer');
 		}
 	}
+
+	public function novaNotificacao($tipo = null, $mensagem = null)
+	{
+		echo $tipo;
+		echo htmlspecialchars($mensagem);
+	}
 }
