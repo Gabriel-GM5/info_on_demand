@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$('.modal').modal();
 });
 
-$('#confirmPassword').on('keyup focusout change', function () {
+$('#confirmPassword').on('keyup focusin focusout change', function () {
 	$('#mensConfSenha').remove();
 	if ($('#password').val() != $(this).val()) {
 		$(this).attr('class', 'validate invalid');
