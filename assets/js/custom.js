@@ -5,8 +5,7 @@ $(document).ready(function () {
 });
 
 $('#confirmPassword').keyup(function () {
-	'use strict';
-	if ($('#password').val() != $('#confirmPassword').val()){
+	if ($('#password').val() != $(this).val()) {
 		alert('Teste');
 	}
 });
