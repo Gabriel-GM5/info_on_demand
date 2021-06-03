@@ -1,11 +1,13 @@
-<script src="//cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
-<form>
-            <textarea name="editor1" id="editor1" rows="10" cols="80">
-                This is my textarea to be replaced with CKEditor 4.
-            </textarea>
-            <script>
-                // Replace the <textarea id="editor1"> with a CKEditor 4
-                // instance, using default configuration.
-                CKEDITOR.replace( 'editor1' );
-            </script>
-</form>
+<div>
+	<div>
+		<div>
+			<form>
+				<div class="input-field">
+					<input id="search" type="search" required>
+					<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+					<i class="material-icons">close</i>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
