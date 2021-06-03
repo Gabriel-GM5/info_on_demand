@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$('.sidenav').sidenav();
 	$(".dropdown-trigger").dropdown();
 	$('.modal').modal();
-	getNotificacao();
+	getNotificacoes();
 });
 
 $('#confirmPassword, #actionCadastrar').on('keyup focusin focusout change click', function () {

@@ -5,7 +5,7 @@ class Api extends CI_Controller
 {
 	public function index()
 	{
-		redirect('home/refresh');
+		redirect('home', 'refresh');
 	}
 
 	public function getNotificacoes()
