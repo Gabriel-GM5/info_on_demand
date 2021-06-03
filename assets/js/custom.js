@@ -23,7 +23,9 @@ function getNotificacoes() {
 		url: api_url + 'getNotificacoes',
 		method: "GET",
 		success: function (result) {
-			alert(result);
+			if (result) {
+				alert(result);
+			}
 		}
 	});
 }
