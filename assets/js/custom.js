@@ -7,8 +7,9 @@ $(document).ready(function () {
 $('#confirmPassword, #actionCadastrar').on('keyup focusin focusout change click', function () {
 	$('#mensConfSenha').remove();
 	if ($('#password').val() != $(this).val()) {
-		$(this).attr('class', 'validate invalid');
-		$(this).parent('div').append('<p id="mensConfSenha">As senhas devem ser iguais!</p>');
+		$('#confirmPassword').attr('class', 'validate invalid');
+		$('#confirmPassword').parent('div').append('<p id="mensConfSenha">As senhas devem ser iguais!</p>');
+		event.preventDefault();
 	} else {
 		$(this).attr('class', 'validate valid');
 	}
