@@ -55,6 +55,17 @@
 				?>
 			</div>
 		</div>
+		<div class="row">
+			<div class="file-field input-field">
+				<div class="btn">
+					<span>Miniatura</span>
+					<input type="file">
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate" type="text">
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="modal-footer">
 		<?php
