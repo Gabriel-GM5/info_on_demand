@@ -31,8 +31,17 @@ class Custom
 
 	public function novaNotificacao($tipo = null, $mensagem = null)
 	{
-		$CI = &get_instance();
-		$tmp = $CI->session->flashdata('notificacao');
-		var_dump($tmp);
+		if ($tipo && $mensagem) {
+			$CI = &get_instance();
+			$tmp = $CI->session->flashdata('notificacao');
+			if (!$tmp) {
+				$tmp = array();
+			}
+			$tmp2 = array($tipo => $mensagem);
+			array_push($tmp, $tmp2);
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
