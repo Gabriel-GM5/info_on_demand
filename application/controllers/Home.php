@@ -6,7 +6,7 @@ class Home extends CI_Controller
 	public function index()
 	{
 		if ($this->ion_auth->logged_in()) {
-			redirect('home/dashboard', 'refresh');
+			redirect('dashboard', 'refresh');
 		} else {
 			if ($this->session->flashdata('login')) {
 				redirect('home/login', 'refresh');
@@ -93,10 +93,5 @@ class Home extends CI_Controller
 	{
 		$this->load->helper('form');
 		$this->custom->renderizarPagina('home/landing_page');
-	}
-
-	public function dashboard()
-	{
-		$this->custom->renderizarPagina('home/dashboard');
 	}
 }
