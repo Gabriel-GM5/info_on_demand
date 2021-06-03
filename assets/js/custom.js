@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 $('#confirmPassword, #actionCadastrar').on('keyup focusin focusout change click', function () {
 	$('#mensConfSenha').remove();
-	if ($('#password').val() != $(this).val()) {
+	if ($('#password').val() != $('#confirmPassword').val()) {
 		$('#confirmPassword').attr('class', 'validate invalid');
 		$('#confirmPassword').parent('div').append('<p id="mensConfSenha">As senhas devem ser iguais!</p>');
 		event.preventDefault();
