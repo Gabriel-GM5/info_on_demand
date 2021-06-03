@@ -4,10 +4,6 @@ body {
 	flex-direction: column;
 }
 
-.main {
-	flex: 1 0 auto;
-}
-
-.containerLogin {
+.main, .containerLogin {
 	flex: 1 0 auto;
 }
