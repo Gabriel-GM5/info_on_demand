@@ -1,2 +1,2 @@
 <main>
-<div class="container z-depth-5">
+	<div class="container main z-depth-5">
