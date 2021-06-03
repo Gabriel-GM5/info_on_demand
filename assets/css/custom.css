@@ -8,6 +8,6 @@ body {
 	flex: 1 0 auto;
 }
 
-#containerLogin {
-	vertical-align: middle;
+.containerLogin {
+	flex: 1 0 auto;
 }
