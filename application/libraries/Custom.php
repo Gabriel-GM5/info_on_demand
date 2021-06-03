@@ -31,7 +31,8 @@ class Custom
 
 	public function novaNotificacao($tipo = null, $mensagem = null)
 	{
-		echo $tipo;
-		echo htmlspecialchars($mensagem);
+		$CI = &get_instance();
+		$tmp = $CI->session->flasdata('notificacao');
+		var_dump($tmp);
 	}
 }
