@@ -31,6 +31,6 @@ function getNotificacoes() {
 	});
 }
 
-$('.uploads').click(function () {
+$("#submitform").submit(function (event) {
 	document.getElementById("overlay").style.display = "block";
 });
