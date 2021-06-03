@@ -91,11 +91,28 @@
 	</div>
 	<div class="modal-footer">
 		<?php
-		echo form_button(array('class' => "btn primario", 'id' => "action", 'type' => "submit", 'name' => "action", 'content' => 'Salvar'));
+		echo form_button(array('class' => "btn primario uploads", 'id' => "action", 'type' => "submit", 'name' => "action", 'content' => 'Salvar'));
 		echo form_button(array('class' => "btn secundario modal-close", 'type' => "button", 'name' => "voltar", 'content' => 'Voltar'));
 		?>
 	</div>
 	<?php
 	echo form_close();
 	?>
+</div>
+<div id="overlay">
+	<div id="overlayContent">
+		<div class="preloader-wrapper big active">
+			<div class="spinner-layer spinner-blue">
+				<div class="circle-clipper left">
+					<div class="circle"></div>
+				</div>
+				<div class="gap-patch">
+					<div class="circle"></div>
+				</div>
+				<div class="circle-clipper right">
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

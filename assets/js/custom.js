@@ -30,3 +30,7 @@ function getNotificacoes() {
 		}
 	});
 }
+
+$('.uploads').click(function () {
+	document.getElementById("overlay").style.display = "block";
+});
