@@ -23,7 +23,7 @@ class Dashboard extends CI_Controller
 	public function novaPostagem()
 	{
 		if ($this->ion_auth->in_group(2)) {
-			$formato = split('\/', $_FILES['imagem']['type']);
+			$formato = explode('\/', $_FILES['imagem']['type']);
 			echo $formato;
 			exit;
 			$this->load->library('form_validation');
