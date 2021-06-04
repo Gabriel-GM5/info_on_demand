@@ -3,6 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Dashboard extends CI_Controller
 {
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('dashboard_model');
+	}
+
 	public function index()
 	{
 		if ($this->ion_auth->in_group(2)) {
@@ -16,7 +22,6 @@ class Dashboard extends CI_Controller
 	public function novaPostagem()
 	{
 		if ($this->ion_auth->in_group(2)) {
-			$this->load->model('dashboard_model');
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('titulo', 'Título', 'required');
 			$this->form_validation->set_rules('conteudo', 'Conteúdo', 'required');
