@@ -13,6 +13,8 @@ class Dashboard extends CI_Controller
 	{
 		if ($this->ion_auth->in_group(2)) {
 			$this->load->helper('form');
+			$posts = $this->dashboard_model->getPostsUsuario($this->ion_auth->user()->row()->id);
+			var_dump($posts); exit;
 			$this->custom->renderizarPagina('dashboard/dashboard');
 		} else {
 			redirect('home', 'refresh');
