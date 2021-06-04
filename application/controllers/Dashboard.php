@@ -24,7 +24,7 @@ class Dashboard extends CI_Controller
 	{
 		if ($this->ion_auth->in_group(2)) {
 			$this->load->library('upload');
-			$this->upload->data('images'); 
+			echo $this->upload->data('images');
 			exit;
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('titulo', 'Título', 'required');
