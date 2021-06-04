@@ -46,8 +46,8 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<?php
-				echo form_input(array('id' => "subTitulo", 'name' => "subTitulo", 'type' => "text", 'class' => "validate", 'value' => set_value('subTitulo')));
-				echo form_label('Subtítulo', 'subTitulo');
+				echo form_input(array('id' => "subtitulo", 'name' => "subtitulo", 'type' => "text", 'class' => "validate", 'value' => set_value('subtitulo')));
+				echo form_label('Subtítulo', 'subtitulo');
 				?>
 			</div>
 		</div>
