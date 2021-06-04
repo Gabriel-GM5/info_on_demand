@@ -23,7 +23,7 @@ class Dashboard extends CI_Controller
 	public function novaPostagem()
 	{
 		if ($this->ion_auth->in_group(2)) {
-			var_dump($_FILES);
+			var_dump($_FILES['images']);
 			exit;
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('titulo', 'Título', 'required');
