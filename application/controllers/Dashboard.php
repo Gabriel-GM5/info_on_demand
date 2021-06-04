@@ -26,8 +26,13 @@ class Dashboard extends CI_Controller
 				$res = false;
 			}
 			if ($res) {
-
+				$res1 = $this->dashboard_model->vincularPostUsuario($this->ion_auth->user()->row()->id, $res);
 			}
+			if (!$res || !$res1) {
+				$this->custom->novaMensagem('error', 'Algo deu errado');
+				// Implementar um rollback;
+			}
+			redirect('dashboard', 'refresh');
 		} else {
 			redirect('home', 'refresh');
 		}
