@@ -20,12 +20,33 @@
 <div class="container">
 	<div class="row">
 		<div class="col s12">
+			<h4>Suas Postagens</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s12">
 			<a class="btn-floating modal-trigger" href="#modalNovaPostagem"><i class="material-icons">add</i></a>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col s12">
-
+			<ul class="collection">
+				<?php
+				foreach ($posts as $post) {
+				?>
+					<li class="collection-item avatar">
+						<img src="<?php echo base_url('assets/images/sem_miniatura.png') ?>" alt="" class="circle">
+						<a href="#"><span class="title"><?php echo $post->titulo ?></span></a>
+						<p><?php echo $post->subtitulo ?>
+							<br>
+							Por <strong><?php echo $post->nomeUsuario ?>&nbsp;<?php echo $post->sobrenomeUsuario ?></strong>
+							<br>
+						</p>
+					</li>
+				<?php
+				}
+				?>
+			</ul>
 		</div>
 	</div>
 </div>
