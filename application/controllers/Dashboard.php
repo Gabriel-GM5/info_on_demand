@@ -37,6 +37,8 @@ class Dashboard extends CI_Controller
 			if (!$res || !$res1) {
 				$this->custom->novaMensagem('error', 'Algo deu errado');
 				// Implementar um rollback;
+			} else {
+				
 			}
 			redirect('dashboard', 'refresh');
 		} else {

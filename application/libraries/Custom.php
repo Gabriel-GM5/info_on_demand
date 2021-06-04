@@ -45,4 +45,8 @@ class Custom
 			return false;
 		}
 	}
+
+	public function uploadFile($arquivo = null, $tipo = null)
+	{
+	}
 }
