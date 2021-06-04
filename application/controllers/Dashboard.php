@@ -27,7 +27,7 @@ class Dashboard extends CI_Controller
 			$str = $_FILES['images']['name'];
 			echo $str;
 			$ext = explode('.', $str);
-			echo $ext;
+			var_dump($ext);
 			exit;
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('titulo', 'Título', 'required');
