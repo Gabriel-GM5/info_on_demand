@@ -1,6 +1,7 @@
 <?php
 $menu = '';
 if ($logado) {
+	$menu .= '<li><a href=' . site_url('home/landing_page') . '><i class="material-icons">search</i></a></li>';
 	$menu .= '
 	<li>
 		<div class="chip btn modal-trigger" data-target="modalUsuario">
