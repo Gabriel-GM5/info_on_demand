@@ -45,22 +45,4 @@ class Custom
 			return false;
 		}
 	}
-
-	public function uploadFile($nomeArquivo = null, $tipo = null)
-	{
-		if ($nomeArquivo && $tipo && ($tipo == 'videos' || $tipo == 'images' || $tipo == 'audios')) {
-			$CI = &get_instance();
-			$config['upload_path'] = './uploads/' . $tipo;
-			$config['allowed_types'] = 'gif|jpg|jpeg|png|mp4|avi|flv|mkv|mp3|aac|ogg';
-			$config['file_name'] = $nomeArquivo;
-			$CI->load->library('upload', $config);
-			if (!$CI->upload->do_upload($tipo)) {
-				return array('error' => $CI->upload->display_errors());
-			} else {
-				return array('upload_data' => $CI->upload->data());
-			}
-		} else {
-			return false;
-		}
-	}
 }

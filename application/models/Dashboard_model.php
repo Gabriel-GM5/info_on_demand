@@ -44,4 +44,28 @@ class Dashboard_model extends CI_Model
 			return false;
 		}
 	}
+
+	public function uploadFile($nome = null, $tipo = null, $file = null, $idPost = null)
+	{
+		if ($nome && $tipo && $file && $idPost) {
+			if ($tipo == 'images') {
+				$tp = 'imagem';
+				$tpnm = $tp . 'NomeArquivo';
+			} elseif ($tipo == 'videos') {
+				$tp = 'video';
+				$tpnm = $tp . 'NomeArquivo';
+			} elseif ($tipo == 'sounds') {
+				$tp = 'som';
+				$tpnm = $tp . 'NomeArquivo';
+			} else {
+				return false;
+			}
+			$this->db->set($tp, $file);
+			$this->db->set($tpnm, $nome);
+			$this->db->where('id', $idPost);
+			return $this->db->update('posts');
+		} else {
+			return false;
+		}
+	}
 }
