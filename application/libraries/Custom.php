@@ -55,9 +55,9 @@ class Custom
 			$config['file_name'] = $nomeArquivo;
 			$CI->load->library('upload', $config);
 			if (!$CI->upload->do_upload($tipo)) {
-				return array('error' => $this->upload->display_errors());
+				return array('error' => $CI->upload->display_errors());
 			} else {
-				return array('upload_data' => $this->upload->data());
+				return array('upload_data' => $CI->upload->data());
 			}
 		} else {
 			return false;
