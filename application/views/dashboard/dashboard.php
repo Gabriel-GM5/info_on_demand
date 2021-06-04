@@ -30,29 +30,35 @@
 	</div>
 	<div class="row">
 		<div class="col s12">
-			<ul class="collection">
-				<?php
-				foreach ($posts as $post) {
-				?>
-					<li class="collection-item avatar">
-						<img src="<?php echo base_url('assets/images/sem_miniatura.png') ?>" alt="" class="circle">
-						<a href="#"><span class="title"><?php echo $post->titulo ?></span>
-							<p>
-								<?php
-								if ($post->subtitulo) {
-									echo $post->subtitulo;
-								}
-								?>
-								<br>
-								Por <strong><?php echo $post->nomeUsuario ?>&nbsp;<?php echo $post->sobrenomeUsuario ?></strong>
-								<br>
-							</p>
-						</a>
-					</li>
-				<?php
-				}
-				?>
-			</ul>
+			<?php
+			if ($posts) {
+			?>
+				<ul class="collection">
+					<?php
+					foreach ($posts as $post) {
+					?>
+						<li class="collection-item avatar">
+							<img src="<?php echo base_url('assets/images/sem_miniatura.png') ?>" alt="" class="circle">
+							<a href="#"><span class="title"><?php echo $post->titulo ?></span>
+								<p>
+									<?php
+									if ($post->subtitulo) {
+										echo $post->subtitulo;
+									}
+									?>
+									<br>
+									Por <strong><?php echo $post->nomeUsuario ?>&nbsp;<?php echo $post->sobrenomeUsuario ?></strong>
+									<br>
+								</p>
+							</a>
+						</li>
+					<?php
+					}
+					?>
+				</ul>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 </div>

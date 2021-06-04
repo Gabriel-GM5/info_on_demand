@@ -34,7 +34,7 @@ class Dashboard_model extends CI_Model
 	public function getPostsUsuario($user_id = null)
 	{
 		if ($user_id) {
-			$this->db->select('users.first_name as nomeUsuario, users.last_name as sobrenomeUsuario, users.id as idUsuario, posts.*');
+			$this->db->select('users.first_name as nomeUsuario, users.last_name as sobrenomeUsuario, users.id as idUsuario, users.id as idUsuario, posts.id as idPost, posts.titulo, posts.subtitulo, posts.visualizacoes, posts.criacao');
 			$this->db->from('users_posts');
 			$this->db->join('users', 'users.id = users_posts.users_id', 'left');
 			$this->db->join('posts', 'posts.id = users_posts.posts_id', 'left');

@@ -3,6 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('home_model');
+	}
+
 	public function index()
 	{
 		if ($this->ion_auth->logged_in()) {
@@ -92,6 +98,18 @@ class Home extends CI_Controller
 	public function landing_page()
 	{
 		$this->load->helper('form');
-		$this->custom->renderizarPagina('home/landing_page');
+		if ($this->input->post('termo')) {
+			$data['posts'] = $this->home_model->getPostsBusca($this->input->post('termo'));
+		} else {
+			$data['posts'] = false;
+		}
+		$this->custom->renderizarPagina('home/landing_page', $data);
+	}
+
+	public function resultado_busca()
+	{
+		if ($this->input->post('termo')) {
+			$data['posts'] = $this->home_model->getPostsBusca($this->input->post('termo'));
+		}
 	}
 }
