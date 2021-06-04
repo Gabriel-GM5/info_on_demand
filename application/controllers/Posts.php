@@ -16,9 +16,10 @@ class Posts extends CI_Controller
 
 	public function ver($idPost = false)
 	{
-		if ($idPost && is_int($idPost)) {
+		if (is_numeric($idPost)) {
 			$data['post'] = $this->posts_model->getPostById($idPost);
 			var_dump($data['post']);
+			exit;
 		} else {
 			redirect('home', 'refresh');
 		}
