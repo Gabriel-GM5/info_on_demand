@@ -16,13 +16,17 @@ class Dashboard extends CI_Controller
 	public function novaPostagem()
 	{
 		if ($this->ion_auth->in_group(2)) {
+			$this->load->model('dashboard_model');
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('titulo', 'Título', 'required');
 			$this->form_validation->set_rules('conteudo', 'Conteúdo', 'required');
 			if ($this->form_validation->run()) {
-				$this->load->model('dashboard_model');
 				$res = $this->dashboard_model->gravarPost($this->input->post('titulo'), $this->input->post('subtitulo'), $this->input->post('conteudo'));
-				echo $res;
+			} else {
+				$res = false;
+			}
+			if ($res) {
+
 			}
 		} else {
 			redirect('home', 'refresh');

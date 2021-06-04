@@ -19,4 +19,15 @@ class Dashboard_model extends CI_Model
 			return false;
 		}
 	}
+
+	public function vincularPostUsuario($user_id = null, $post_id = null)
+	{
+		if ($user_id && $post_id) {
+			$this->db->set('users_id', $user_id);
+			$this->db->set('posts_id', $post_id);
+			return $this->db->insert('users_posts');
+		} else {
+			return false;
+		}
+	}
 }
