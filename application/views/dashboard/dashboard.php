@@ -6,10 +6,14 @@
 	</div>
 	<div class="row">
 		<div class="col s6">
-			<p><strong>Postagens: </strong></p>
+			<center>
+				<p><strong>Postagens: </strong></p>
+			</center>
 		</div>
 		<div class="col s6">
-			<p><strong>Visualizações: </strong></p>
+			<center>
+				<p><strong>Visualizações: </strong></p>
+			</center>
 		</div>
 	</div>
 </div>
