@@ -43,7 +43,7 @@ class Dashboard extends CI_Controller
 					$ext = $ext[sizeof($ext) - 1];
 					if ($ext) {
 						$nome = $tipo . '_' . $res . '.' . $ext;
-						$result = $this->custom->uploadFile($_FILES[$tipo], $nome, $tipo);
+						$result = $this->custom->uploadFile($nome, $tipo);
 						var_dump($result);
 					}
 				}
