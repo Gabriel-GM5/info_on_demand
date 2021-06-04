@@ -96,7 +96,7 @@
 			<div class="file-field input-field">
 				<div class="btn">
 					<span>Imagem</span>
-					<input type="file" id="imagem" name="imagem" accept="image/*">
+					<input type="file" id="images" name="images" accept="image/*">
 				</div>
 				<div class="file-path-wrapper">
 					<input class="file-path validate" type="text">
@@ -107,7 +107,7 @@
 			<div class="file-field input-field">
 				<div class="btn">
 					<span>Vídeo</span>
-					<input type="file" id="video" name="video" accept="video/*">
+					<input type="file" id="videos" name="videos" accept="video/*">
 				</div>
 				<div class="file-path-wrapper">
 					<input class="file-path validate" type="text">
@@ -118,7 +118,7 @@
 			<div class="file-field input-field">
 				<div class="btn">
 					<span>Áudio</span>
-					<input type="file" id="audio" name="audio" accept="audio/*">
+					<input type="file" id="audios" name="audios" accept="audio/*">
 				</div>
 				<div class="file-path-wrapper">
 					<input class="file-path validate" type="text">
