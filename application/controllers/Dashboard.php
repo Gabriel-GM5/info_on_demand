@@ -23,12 +23,13 @@ class Dashboard extends CI_Controller
 	public function novaPostagem()
 	{
 		foreach ($_FILES as $tipo => $arquivo) {
-			echo is_uploaded_file($_FILES[$tipo]);
 			$res = 0;
 			$ext = explode('.', $arquivo['name']);
 			$ext = $ext[sizeof($ext) - 1];
-			$nome = $tipo . '_' . $res . '.' . $ext;
-			echo $nome . '<br>';
+			if ($ext) {
+				$nome = $tipo . '_' . $res . '.' . $ext;
+				echo $nome . '<br>';
+			}
 		}
 		exit;
 		if ($this->ion_auth->in_group(2)) {
