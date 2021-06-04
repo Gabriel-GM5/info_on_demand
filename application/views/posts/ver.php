@@ -10,10 +10,10 @@
 	<div class="row">
 		<center>
 			<div class="col s6">
-				<p><strong>Criado em: </strong></p>
+				<p><strong>Criado em: </strong><?php echo $post->criacao ?></p>
 			</div>
 			<div class="col s6">
-				<p><strong>Última edição em: </strong></p>
+				<p><strong>Última edição em: </strong><?php echo $post->ultimaEdicao ?></p>
 			</div>
 			<div class="col s12">
 				<p>Por: <strong><?php echo $post->nomeUsuario ?>&nbsp;<?php echo $post->sobrenomeUsuario ?></strong></p>
