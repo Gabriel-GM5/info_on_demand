@@ -38,7 +38,7 @@ class Dashboard_model extends CI_Model
 			$this->db->from('users_posts');
 			$this->db->join('users', 'users.id = users_posts.users_id', 'left');
 			$this->db->join('posts', 'posts.id = users_posts.posts_id', 'left');
-			$this->db->where('users_id', $user_id);
+			$this->db->where('users.id', $user_id);
 			return $this->db->get()->result();
 		} else {
 			return false;
