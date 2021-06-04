@@ -14,6 +14,13 @@
 							?>
 						</div>
 					</div>
+					<div class="row">
+						<div class="file-field input-field">
+							<?php
+							echo form_button(array('class' => "btn primario", 'id' => "action", 'type' => "submit", 'name' => "action", 'content' => 'Buscar'));
+							?>
+						</div>
+					</div>
 					<?php
 					echo form_close();
 					?>
@@ -26,12 +33,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col s12">
-			<h4>Suas Postagens</h4>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col s12">
-			<a class="btn-floating modal-trigger" href="#modalNovaPostagem"><i class="material-icons">add</i></a>
+			<h4>Resultados</h4>
 		</div>
 	</div>
 	<div class="row">
