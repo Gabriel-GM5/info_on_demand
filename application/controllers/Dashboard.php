@@ -24,7 +24,7 @@ class Dashboard extends CI_Controller
 	{
 		if ($this->ion_auth->in_group(2)) {
 			$tipo = $_FILES['imagem']['type'];
-			$formato = explode('\/', $tipo);
+			$formato = explode('\/', $tipo[0]);
 			echo $formato;
 			exit;
 			$this->load->library('form_validation');
