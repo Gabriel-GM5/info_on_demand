@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller
+class Posts extends CI_Controller
 {
 	public function __construct()
 	{
@@ -14,7 +14,8 @@ class Dashboard extends CI_Controller
 		redirect('home', 'refresh');
 	}
 
-	public function ver($idPost = false){
+	public function ver($idPost = false)
+	{
 		if ($idPost && is_int($idPost)) {
 			$data['post'] = $this->posts_model->getPostById($idPost);
 			var_dump($data['post']);
