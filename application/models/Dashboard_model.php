@@ -12,6 +12,7 @@ class Dashboard_model extends CI_Model
 		$datahora = date('d-m-Y H:i:s');
 		$this->db->set('criacao', $datahora);
 		$this->db->set('ultimaEdicao', $datahora);
+		$this->db->set('visualizacoes', 0);
 		if ($this->db->insert('posts')) {
 			return $this->db->insert_id();
 		} else {
