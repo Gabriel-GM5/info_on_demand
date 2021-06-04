@@ -11,6 +11,7 @@ class Dashboard extends CI_Controller
 
 	public function index()
 	{
+		$this->load->helper('directory');
 		$map = directory_map('./uploads/', FALSE, TRUE);
 		var_dump($map);
 		exit;
