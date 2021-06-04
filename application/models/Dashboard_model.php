@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dahsboard_model extends CI_Model
+class Dashboard_model extends CI_Model
 {
 	public function gravarPost($titulo = null, $subtitulo = null, $conteudo = null)
 	{
