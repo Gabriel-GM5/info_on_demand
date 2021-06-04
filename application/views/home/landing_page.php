@@ -9,8 +9,8 @@
 					<div class="row">
 						<div class="input-field col s12">
 							<?php
-							echo form_input(array('id' => "search", 'name' => "search", 'type' => "text", 'class' => "validate barraBusca"));
-							echo form_label('Pesquisar', 'search');
+							echo form_input(array('id' => "termo", 'name' => "termo", 'type' => "text", 'class' => "validate barraBusca"));
+							echo form_label('Pesquisar', 'termo');
 							?>
 						</div>
 					</div>
@@ -29,18 +29,17 @@
 		</div>
 	</div>
 </div>
-
-<div class="container">
-	<div class="row">
-		<div class="col s12">
-			<h4>Resultados</h4>
+<?php
+if ($posts) {
+?>
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h4>Resultados</h4>
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col s12">
-			<?php
-			if ($posts) {
-			?>
+		<div class="row">
+			<div class="col s12">
 				<ul class="collection">
 					<?php
 					foreach ($posts as $post) {
@@ -64,9 +63,9 @@
 					}
 					?>
 				</ul>
-			<?php
-			}
-			?>
+			</div>
 		</div>
 	</div>
-</div>
+<?php
+}
+?>
