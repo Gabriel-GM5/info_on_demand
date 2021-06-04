@@ -100,8 +100,10 @@ class Home extends CI_Controller
 		$this->load->helper('form');
 		if ($this->input->post('termo')) {
 			$data['posts'] = $this->home_model->getPostsBusca($this->input->post('termo'));
+			$data['termo'] = $this->input->post('termo');
 		} else {
 			$data['posts'] = false;
+			$data['termo'] = '';
 		}
 		$this->custom->renderizarPagina('home/landing_page', $data);
 	}

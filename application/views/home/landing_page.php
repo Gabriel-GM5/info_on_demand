@@ -9,7 +9,7 @@
 					<div class="row">
 						<div class="input-field col s12">
 							<?php
-							echo form_input(array('id' => "termo", 'name' => "termo", 'type' => "text", 'class' => "validate barraBusca"));
+							echo form_input(array('id' => "termo", 'name' => "termo", 'type' => "text", 'class' => "validate barraBusca", 'value' => $termo));
 							echo form_label('Pesquisar', 'termo');
 							?>
 						</div>
