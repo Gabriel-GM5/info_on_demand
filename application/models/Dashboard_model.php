@@ -9,7 +9,7 @@ class Dashboard_model extends CI_Model
 		$this->db->set('subtitulo', $subtitulo);
 		$this->db->set('conteudo', $conteudo);
 		date_default_timezone_set('America/Sao_Paulo');
-		$datahora = date('d-m-Y H:i:s');
+		$datahora = date('Y-m-d H:i:s');
 		$this->db->set('criacao', $datahora);
 		$this->db->set('ultimaEdicao', $datahora);
 		$this->db->set('visualizacoes', 0);
