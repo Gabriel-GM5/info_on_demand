@@ -46,7 +46,7 @@ if ($posts) {
 					?>
 						<li class="collection-item avatar">
 							<img src="<?php echo base_url('assets/images/sem_miniatura.png') ?>" alt="" class="circle">
-							<a href="<?php echo site_url('posts/ver/' . $post->idPost) ?>"><span class="title"><?php echo $post->titulo ?></span>
+							<a href="<?php echo site_url('posts/ver/' . $post->idPost) ?>" target="_blank"><span class="title"><?php echo $post->titulo ?></span>
 								<p>
 									<?php
 									if ($post->subtitulo) {

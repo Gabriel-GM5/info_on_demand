@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		<center>
+			<div class="col s12">
+				<h3><?php echo $post->titulo ?></h3>
+				<h4><?php echo $post->subtitulo ?></h4>
+			</div>
+		</center>
+	</div>
+	<div class="row">
+		<center>
+			<div class="col s6">
+				<p><strong>Criado em: </strong></p>
+			</div>
+			<div class="col s6">
+				<p><strong>Última edição em: </strong></p>
+			</div>
+			<div class="col s12">
+				<p>Por: <strong><?php echo $post->nomeUsuario ?>&nbsp;<?php echo $post->sobrenomeUsuario ?></strong></p>
+			</div>
+		</center>
+	</div>
+	<div class="row">
+		<div class="col s12">
+			<p><?php echo $post->conteudo ?></p>
+		</div>
+	</div>
+</div>
