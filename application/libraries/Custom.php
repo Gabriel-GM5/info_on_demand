@@ -50,7 +50,7 @@ class Custom
 	{
 		if ($arquivo && $nomeArquivo && $tipo && ($tipo == 'videos' || $tipo == 'images' || $tipo == 'audios')) {
 			$config['upload_path'] = './uploads/' . $tipo;
-			$config['allowed_types'] = 'gif|jpg|png|mp4|avi|flv|mkv|mp3|aac|ogg';
+			$config['allowed_types'] = 'gif|jpg|jpeg|png|mp4|avi|flv|mkv|mp3|aac|ogg';
 			$config['file_name'] = $nomeArquivo;
 			$this->load->library('upload', $config);
 			if (!$this->upload->do_upload($arquivo)) {
