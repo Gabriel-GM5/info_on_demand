@@ -23,7 +23,7 @@ class Dashboard extends CI_Controller
 	public function novaPostagem()
 	{
 		foreach ($_FILES as $tipo => $arquivo) {
-			echo is_uploaded_file($_FILES['$tipo']);
+			echo is_uploaded_file($_FILES[$tipo]);
 			$res = 0;
 			$ext = explode('.', $arquivo['name']);
 			$ext = $ext[sizeof($ext) - 1];
