@@ -25,7 +25,7 @@
 	?>
 		<div class="row">
 			<div class="col s12">
-				<img src="data:image/jpeg;base64,<?php echo base64_encode($result['image']) ?>" />
+				<img src="data:image/jpeg;base64,<?php echo base64_encode($post->imagem) ?>" />
 			</div>
 		</div>
 	<?php
