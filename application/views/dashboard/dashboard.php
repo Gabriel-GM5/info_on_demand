@@ -4,6 +4,7 @@
 			<h3>Dashboard</h3>
 		</div>
 	</div>
+	<!--
 	<div class="row">
 		<div class="col s6">
 			<center>
@@ -16,6 +17,7 @@
 			</center>
 		</div>
 	</div>
+	-->
 </div>
 <div class="container">
 	<div class="row">
