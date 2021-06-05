@@ -22,6 +22,7 @@ class Dashboard extends CI_Controller
 
 	public function novaPostagem()
 	{
+		var_dump($_FILES); exit;
 		if ($this->ion_auth->in_group(2)) {
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('titulo', 'Título', 'required');
@@ -44,12 +45,9 @@ class Dashboard extends CI_Controller
 					if ($ext) {
 						$nome = $tipo . '_' . $res . '.' . $ext;
 						$result = $this->dashboard_model->uploadFile($nome, $tipo, file_get_contents($_FILES[$tipo]['tmp_name']), $res);
-						var_dump($result);
-						echo '<br>';
 					}
 				}
 			}
-			exit;
 			redirect('dashboard', 'refresh');
 		} else {
 			redirect('home', 'refresh');
