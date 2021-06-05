@@ -46,20 +46,6 @@
 		</div>
 	<?php
 	}
-	if ($post->audio) {
-	?>
-		<div class="row">
-			<div class="col s12">
-				<center>
-					<audio controls>
-						<source src="data:audio/*;base64,<?php echo base64_encode($post->audio) ?>" type="audio/*">
-						Your browser does not support the video tag.
-					</audio>
-				</center>
-			</div>
-		</div>
-	<?php
-	}
 	?>
 	<div class="row">
 		<div class="col s12">

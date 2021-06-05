@@ -114,6 +114,7 @@
 				</div>
 			</div>
 		</div>
+		<!--
 		<div class="row">
 			<div class="file-field input-field">
 				<div class="btn">
@@ -125,6 +126,7 @@
 				</div>
 			</div>
 		</div>
+		-->
 	</div>
 	<div class="modal-footer">
 		<?php
