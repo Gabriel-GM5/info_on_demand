@@ -26,7 +26,7 @@
 		<div class="row">
 			<div class="col s12">
 				<center>
-					<img src="data:image/*;base64,<?php echo base64_encode($post->imagem) ?>" class="materialboxed" width="650" />
+					<img src="data:image/*;base64,<?php echo base64_encode($post->imagem) ?>" class="materialboxed" width="240" height="auto" />
 				</center>
 			</div>
 		</div>
@@ -37,7 +37,7 @@
 		<div class="row">
 			<div class="col s12">
 				<center>
-					<video width="650" height="auto" controls>
+					<video width="240" height="auto" controls>
 						<source src="data:video/*;base64,<?php echo base64_encode($post->video) ?>" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>

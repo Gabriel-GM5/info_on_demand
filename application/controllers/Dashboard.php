@@ -29,7 +29,6 @@ class Dashboard extends CI_Controller
 			if ($this->form_validation->run()) {
 				$res = $this->dashboard_model->gravarPost($this->input->post('titulo'), $this->input->post('subtitulo'), $this->input->post('conteudo'));
 			} else {
-				echo 'validacao';
 				$res = false;
 			}
 			if ($res) {
