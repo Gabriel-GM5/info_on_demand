@@ -33,6 +33,22 @@
 	<?php
 	}
 	?>
+	<?php
+	if ($post->video) {
+	?>
+		<div class="row">
+			<div class="col s12">
+				<center>
+					<video width="650" height="auto" controls>
+						<source src="data:image/*;base64,<?php echo base64_encode($post->video) ?>" type="video/*">
+						Your browser does not support the video tag.
+					</video>
+				</center>
+			</div>
+		</div>
+	<?php
+	}
+	?>
 	<div class="row">
 		<div class="col s12">
 			<p><?php echo $post->conteudo ?></p>
