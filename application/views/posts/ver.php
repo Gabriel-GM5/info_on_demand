@@ -20,6 +20,17 @@
 			</div>
 		</center>
 	</div>
+	<?php
+	if ($post->imagem) {
+	?>
+		<div class="row">
+			<div class="col s12">
+				<img src="data:image/jpeg;base64,<?php echo base64_encode($result['image']) ?>" />
+			</div>
+		</div>
+	<?php
+	}
+	?>
 	<div class="row">
 		<div class="col s12">
 			<p><?php echo $post->conteudo ?></p>
