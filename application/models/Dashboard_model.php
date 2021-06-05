@@ -58,13 +58,16 @@ class Dashboard_model extends CI_Model
 				$tp = 'som';
 				$tpnm = $tp . 'NomeArquivo';
 			} else {
+				echo 'problema de tipo';
 				return false;
 			}
+			echo 'problema de upload';
 			$this->db->set($tp, $file);
 			$this->db->set($tpnm, $nome);
 			$this->db->where('id', $idPost);
 			return $this->db->update('posts');
 		} else {
+			echo 'Outro problema';
 			return false;
 		}
 	}
