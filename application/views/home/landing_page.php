@@ -39,7 +39,7 @@ if ($posts) {
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12 m4">
+			<div class="col s12 m6">
 				<h6>Posts</h6>
 				<ul class="collection">
 					<?php
@@ -75,7 +75,7 @@ if ($posts) {
 					?>
 				</ul>
 			</div>
-			<div class="col s12 m4">
+			<div class="col s12 m6">
 				<h6>Imagens</h6>
 				<ul class="collection">
 					<?php
@@ -103,7 +103,7 @@ if ($posts) {
 					?>
 				</ul>
 			</div>
-			<div class="col s12 m4">
+			<div class="col s12 m6">
 				<h6>Videos</h6>
 				<ul class="collection">
 					<?php
