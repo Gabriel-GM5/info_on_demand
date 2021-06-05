@@ -107,7 +107,7 @@
 			<div class="file-field input-field">
 				<div class="btn">
 					<span>Vídeo</span>
-					<input type="file" id="videos" name="videos" accept="video/*">
+					<input type="file" id="videos" name="videos" accept="video/mp4">
 				</div>
 				<div class="file-path-wrapper">
 					<input class="file-path validate" type="text">

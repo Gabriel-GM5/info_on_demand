@@ -32,8 +32,6 @@
 		</div>
 	<?php
 	}
-	?>
-	<?php
 	if ($post->video) {
 	?>
 		<div class="row">
@@ -43,6 +41,20 @@
 						<source src="data:video/*;base64,<?php echo base64_encode($post->video) ?>" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
+				</center>
+			</div>
+		</div>
+	<?php
+	}
+	if ($post->audio) {
+	?>
+		<div class="row">
+			<div class="col s12">
+				<center>
+					<audio controls>
+						<source src="data:audio/*;base64,<?php echo base64_encode($post->audio) ?>" type="audio/*">
+						Your browser does not support the video tag.
+					</audio>
 				</center>
 			</div>
 		</div>
