@@ -29,13 +29,14 @@ class Dashboard extends CI_Controller
 			if ($this->form_validation->run()) {
 				$res = $this->dashboard_model->gravarPost($this->input->post('titulo'), $this->input->post('subtitulo'), $this->input->post('conteudo'));
 			} else {
+				echo 'validacao';
 				$res = false;
 			}
 			if ($res) {
 				$res1 = $this->dashboard_model->vincularPostUsuario($this->ion_auth->user()->row()->id, $res);
 			}
 			if (!$res || !$res1) {
-				$this->custom->novaMensagem('error', 'Algo deu errado');
+				//$this->custom->novaMensagem('error', 'Algo deu errado');
 				// Implementar um rollback;
 			} else {
 				foreach ($_FILES as $tipo => $arquivo) {
