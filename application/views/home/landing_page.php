@@ -46,7 +46,17 @@ if ($posts) {
 					foreach ($posts as $post) {
 					?>
 						<li class="collection-item avatar">
-							<img src="<?php echo base_url('assets/images/sem_miniatura.png') ?>" alt="" class="circle">
+							<?php
+							if (isset($post->imagem)) {
+							?>
+								<img src="data:image/*;base64,<?php echo base64_encode($post->imagem) ?>" alt="" class="circle">
+							<?php
+							} else {
+							?>
+								<img src="<?php echo base_url('assets/images/sem_miniatura.png') ?>" alt="" class="circle">
+							<?php
+							}
+							?>
 							<a href="<?php echo site_url('posts/ver/' . $post->idPost) ?>" target="_blank"><span class="title"><?php echo $post->titulo ?></span>
 								<p>
 									<?php
@@ -85,7 +95,7 @@ if ($posts) {
 										<br>
 									</p>
 								</a>
-								<img src="data:image/*;base64,<?php echo base64_encode($post->imagem) ?>" class="materialboxed" width="650" />
+								<img src="data:image/*;base64,<?php echo base64_encode($post->imagem) ?>" class="materialboxed" width="100" />
 							</li>
 					<?php
 						}
@@ -113,7 +123,7 @@ if ($posts) {
 										<br>
 									</p>
 								</a>
-								<video width="650" height="auto" controls>
+								<video width="100" height="auto" controls>
 									<source src="data:video/*;base64,<?php echo base64_encode($post->video) ?>" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
