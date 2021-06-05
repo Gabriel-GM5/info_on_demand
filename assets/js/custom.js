@@ -5,6 +5,7 @@ $(document).ready(function () {
 	$(".dropdown-trigger").dropdown();
 	$('.modal').modal();
 	$('.materialize-textarea').characterCounter();
+	$('.materialboxed').materialbox();
 	getNotificacoes();
 });
 
