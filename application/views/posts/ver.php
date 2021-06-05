@@ -40,7 +40,7 @@
 			<div class="col s12">
 				<center>
 					<video width="650" height="auto" controls>
-						<source src="data:video/*;base64,<?php echo base64_encode($post->video) ?>" type="video/*">
+						<source src="data:video/*;base64,<?php echo base64_encode($post->video) ?>" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
 				</center>
