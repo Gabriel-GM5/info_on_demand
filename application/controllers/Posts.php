@@ -18,6 +18,7 @@ class Posts extends CI_Controller
 	{
 		if (is_numeric($idPost)) {
 			$data['post'] = $this->posts_model->getPostById($idPost);
+			var_dump($data['post']); exit;
 			$this->custom->renderizarPagina('posts/ver', $data);
 		} else {
 			redirect('home', 'refresh');
