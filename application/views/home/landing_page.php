@@ -39,7 +39,8 @@ if ($posts) {
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12">
+			<div class="col s12 m4">
+				<h6>Posts</h6>
 				<ul class="collection">
 					<?php
 					foreach ($posts as $post) {
@@ -60,6 +61,65 @@ if ($posts) {
 							</a>
 						</li>
 					<?php
+					}
+					?>
+				</ul>
+			</div>
+			<div class="col s12 m4">
+				<h6>Imagens</h6>
+				<ul class="collection">
+					<?php
+					foreach ($posts as $post) {
+						if (isset($post->imagem)) {
+					?>
+							<li class="collection-item avatar">
+								<a href="<?php echo site_url('posts/ver/' . $post->idPost) ?>" target="_blank"><span class="title"><?php echo $post->titulo ?></span>
+									<p>
+										<?php
+										if ($post->subtitulo) {
+											echo $post->subtitulo;
+										}
+										?>
+										<br>
+										Por <strong><?php echo $post->nomeUsuario ?>&nbsp;<?php echo $post->sobrenomeUsuario ?></strong>
+										<br>
+									</p>
+								</a>
+								<img src="data:image/*;base64,<?php echo base64_encode($post->imagem) ?>" class="materialboxed" width="650" />
+							</li>
+					<?php
+						}
+					}
+					?>
+				</ul>
+			</div>
+			<div class="col s12 m4">
+				<h6>Videos</h6>
+				<ul class="collection">
+					<?php
+					foreach ($posts as $post) {
+						if (isset($post->video)) {
+					?>
+							<li class="collection-item avatar">
+								<a href="<?php echo site_url('posts/ver/' . $post->idPost) ?>" target="_blank"><span class="title"><?php echo $post->titulo ?></span>
+									<p>
+										<?php
+										if ($post->subtitulo) {
+											echo $post->subtitulo;
+										}
+										?>
+										<br>
+										Por <strong><?php echo $post->nomeUsuario ?>&nbsp;<?php echo $post->sobrenomeUsuario ?></strong>
+										<br>
+									</p>
+								</a>
+								<video width="650" height="auto" controls>
+									<source src="data:video/*;base64,<?php echo base64_encode($post->video) ?>" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</li>
+					<?php
+						}
 					}
 					?>
 				</ul>
