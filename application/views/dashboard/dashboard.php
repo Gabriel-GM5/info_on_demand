@@ -118,7 +118,7 @@
 			<div class="file-field input-field">
 				<div class="btn">
 					<span>Áudio</span>
-					<input type="file" id="audios" name="audios" accept="audio/mp3">
+					<input type="file" id="audios" name="audios" accept="audio/*">
 				</div>
 				<div class="file-path-wrapper">
 					<input class="file-path validate" type="text">
